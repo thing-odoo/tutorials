@@ -17,6 +17,8 @@ class RecurringPlan(models.Model):
     living_area = fields.Integer()
     facades = fields.Integer()
 
+    property_type_id = fields.Many2one("estate.property.type", string="Property Type")
+
     garage = fields.Boolean()
     garden = fields.Boolean()
     garden_area = fields.Integer()
