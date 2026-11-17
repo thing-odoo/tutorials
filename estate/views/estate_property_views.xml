@@ -40,6 +40,7 @@
                     </div>
                     <group>
                         <group>
+                            <field name="tag_ids" widget="many2many_tags"/>
                             <field name="postcode"/>
                             <field name="date_availability"/>
                             <field name="property_type_id"/>
@@ -60,6 +61,12 @@
                                 <field name="garden"/>
                                 <field name="garden_area"/>
                                 <field name="garden_orientation"/>
+                            </group>
+                        </page>
+                        <page string="People of contact">
+                            <group>
+                                <field name="buyer_id"/>
+                                <field name="salesperson_id"/>
                             </group>
                         </page>
                         <page string="Secret info">
@@ -87,6 +94,7 @@
                 <field name="expected_price"/>
                 <field name="selling_price"/>
                 <field name="date_availability"/>
+                <field name="tag_ids"/>
             </list>
         </field>
     </record>
